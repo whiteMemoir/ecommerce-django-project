@@ -15,6 +15,34 @@ class HomeListView(generic.ListView):
     template_name = 'home.html'
     queryset = ProdukItem.objects.all()
     paginate_by = 4
+    
+    def get_queryset(self):
+        category_slug = self.request.GET.get('cat_slug')
+        search = self.request.GET.get('search')
+
+        if category_slug and category_slug != 'all':
+            queryset = ProdukItem.objects.filter(kategori=category_slug)
+        elif search:
+            queryset = ProdukItem.objects.filter(nama_produk__icontains=search)
+        else:
+            queryset = ProdukItem.objects.all()
+        return queryset
+class ContactListView(generic.ListView):
+    template_name = 'contact.html'
+    queryset = ProdukItem.objects.all()
+    paginate_by = 4
+    
+    def get_queryset(self):
+        category_slug = self.request.GET.get('cat_slug')
+        search = self.request.GET.get('search')
+
+        if category_slug and category_slug != 'all':
+            queryset = ProdukItem.objects.filter(kategori=category_slug)
+        elif search:
+            queryset = ProdukItem.objects.filter(nama_produk__icontains=search)
+        else:
+            queryset = ProdukItem.objects.all()
+        return queryset
 
 class ProductDetailView(generic.DetailView):
     template_name = 'product_detail.html'

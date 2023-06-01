@@ -33,23 +33,23 @@
 
                         <!-- Link -->
                         <li class="nav-item acitve">
-                            <a class="nav-link text-white" href="#">All</a>
+                            <a class="nav-link text-white" href="{% url 'toko:category' %}?cat_slug=all">All</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Shirts</a>
+                            <a class="nav-link text-white" href="{% url 'toko:category' %}?cat_slug=S">Shirts</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Sport wears</a>
+                            <a class="nav-link text-white" href="{% url 'toko:category' %}?cat_slug=SW">Sport wears</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Outwears</a>
+                            <a class="nav-link text-white" href="{% url 'toko:category' %}?cat_slug=OW">Outwears</a>
                         </li>
 
                     </ul>
 
                     <!-- Search -->
-                    <form class="w-auto py-1" style="max-width: 12rem">
-                        <input type="search" class="form-control rounded-0" placeholder="Search" aria-label="Search">
+                    <form class="w-auto py-1" style="max-width: 12rem" action="{% url %}">
+                        <input type="search" class="form-control rounded-0" name="search" placeholder="Search" aria-label="Search">
                     </form>
 
                 </div>
