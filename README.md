@@ -4,20 +4,20 @@ Repository ini berisi proyek e-commerce yang dikembangkan menggunakan Django.
 
 ## Fitur yang Ditambahkan
 
--[x] Tampilan Produk per Kategori
--[x] Pencarian Produk
+ - [x] Tampilan Produk per Kategori
+ - [x] Pencarian Produk
 
 ## Tambahan Selanjutnya
 
--[ ] Laman Kontak yang Beirisi Alamat
--[ ] Improve Styling
+- [ ] Laman Kontak yang Beirisi Alamat
+- [ ] Improve Styling
 
 ## Fitur Tambahan
 
 Jika memungkinkan, mungkin akan ditambahkan:
 
--[ ] Fitur Rating
--[ ] Fitur Komentar
+- [ ] Fitur Rating
+- [ ] Fitur Komentar
 
 ## Instalasi
 
