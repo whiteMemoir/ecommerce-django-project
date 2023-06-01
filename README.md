@@ -1,6 +1,6 @@
 # ecommerce-django-project
 
-Repository ini berisi proyek e-commerce yang dikembangkan menggunakan Django.
+Repository ini berisi template e-commerce yang dikembangkan menggunakan Django.
 
 ## Fitur yang Ditambahkan
 
