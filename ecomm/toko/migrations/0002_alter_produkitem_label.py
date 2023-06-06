@@ -147,7 +147,7 @@ def create_dummy_data(apps, schema_editor):
         deskripsi='This is a dummy product.',
         gambar='product_pics/lemari.jpg',
         label='NEW',
-        kategori='A'
+        kategori='FU'
     )
 
     produk_item2 = ProdukItem.objects.create(
@@ -158,7 +158,7 @@ def create_dummy_data(apps, schema_editor):
         deskripsi='This is another dummy product.',
         gambar='product_pics/lemari.jpg',
         label='BEST',
-        kategori='B'
+        kategori='FA'
     )
     produk_item3 = ProdukItem.objects.create(
         nama_produk='Dummy Product 3',
@@ -168,7 +168,7 @@ def create_dummy_data(apps, schema_editor):
         deskripsi='This is another dummy product.',
         gambar='product_pics/lemari.jpg',
         label='BEST',
-        kategori='B'
+        kategori='EL'
     )
     produk_item4 = ProdukItem.objects.create(
         nama_produk='Dummy Product 4',
@@ -178,7 +178,7 @@ def create_dummy_data(apps, schema_editor):
         deskripsi='This is another dummy product.',
         gambar='product_pics/lemari.jpg',
         label='BEST',
-        kategori='B'
+        kategori='FU'
     )
     produk_item5 = ProdukItem.objects.create(
         nama_produk='Dummy Product 5',
@@ -188,7 +188,7 @@ def create_dummy_data(apps, schema_editor):
         deskripsi='This is another dummy product.',
         gambar='product_pics/dummy5.jpg',
         label='BEST',
-        kategori='B'
+        kategori='EL'
     )
     produk_item6 = ProdukItem.objects.create(
         nama_produk='Dummy Product 6',
@@ -198,7 +198,7 @@ def create_dummy_data(apps, schema_editor):
         deskripsi='This is another dummy product.',
         gambar='product_pics/dummy6.jpg',
         label='BEST',
-        kategori='B'
+        kategori='EL'
     )
     produk_item7 = ProdukItem.objects.create(
         nama_produk='Dummy Product 7',
@@ -208,7 +208,7 @@ def create_dummy_data(apps, schema_editor):
         deskripsi='This is another dummy product.',
         gambar='product_pics/dummy7.jpg',
         label='BEST',
-        kategori='B'
+        kategori='FA'
     )
     produk_item8 = ProdukItem.objects.create(
         nama_produk='Dummy Product 8',
@@ -218,7 +218,7 @@ def create_dummy_data(apps, schema_editor):
         deskripsi='This is another dummy product.',
         gambar='product_pics/dummy8.jpg',
         label='BEST',
-        kategori='B'
+        kategori='FU'
     )
     produk_item9 = ProdukItem.objects.create(
         nama_produk='Dummy Product 9',
@@ -228,7 +228,7 @@ def create_dummy_data(apps, schema_editor):
         deskripsi='This is another dummy product.',
         gambar='product_pics/dummy9.jpg',
         label='BEST',
-        kategori='B'
+        kategori='FA'
     )
     produk_item10 = ProdukItem.objects.create(
         nama_produk='Dummy Product 9',
@@ -238,7 +238,7 @@ def create_dummy_data(apps, schema_editor):
         deskripsi='This is another dummy product.',
         gambar='product_pics/dummy9.jpg',
         label='BEST',
-        kategori='B'
+        kategori='EL'
     )
 
 class Migration(migrations.Migration):
