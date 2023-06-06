@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12 mt-4 mb-4">
+            <h1 class="text-center">Contact</h1>
+        </div>
+    </div>
+    <table class="table align-middle mb-0 bg-white">
+        <thead class="bg-light">
+            <tr>
+                <th>#</th>
+                <th>Alamat</th>
+                <th>Negara</th>
+                <th>Kode Pos</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for pItem in object_list %}
+            <tr>
+                <td scope="row">
+                    {{ forloop.counter }}
+                </td>
+                <td>
+                    <div class="d-flex align-items-center">
+                        <div class="ms-3">
+                            <p class="fw-bold mb-1">{{ pItem.alamat_1 }}</p>
+                            <p class="text-muted mb-0">{{ pItem.alamat_2 }}</p>
+                        </div>
+                    </div>
+                    </a>
+                </td>
+                <td>
+                    <div>
+                        <p class="fw-bold mb-1">{{ pItem.negara }}</p>
+                    </div>
+                </td>
+                <td>
+                    <p class="fw-bold mb-1">{{ pItem.kode_pos }}</p>
+                </td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan='5'>Anda belum mengisi alamat</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock content %}

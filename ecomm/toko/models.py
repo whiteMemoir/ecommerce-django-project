@@ -24,13 +24,13 @@ User = get_user_model()
 
 class ProdukItem(models.Model):
     nama_produk = models.CharField(max_length=100)
-    harga = models.FloatField()
-    harga_diskon = models.FloatField(blank=True, null=True)
+    harga = models.BigIntegerField()
+    harga_diskon = models.BigIntegerField(blank=True, null=True)
     slug = models.SlugField(unique=True)
     deskripsi = models.TextField()
     gambar = models.ImageField(upload_to='product_pics')
     label = models.CharField(choices=PILIHAN_LABEL, max_length=4)
-    kategori = models.CharField(choices=PILIHAN_KATEGORI, max_length=2)
+    kategori = models.CharField(choices=PILIHAN_KATEGORI, max_length=100)
 
     def __str__(self):
         return f"{self.nama_produk} - ${self.harga}"

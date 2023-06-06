@@ -27,23 +27,11 @@ class HomeListView(generic.ListView):
         else:
             queryset = ProdukItem.objects.all()
         return queryset
+    
 class ContactListView(generic.ListView):
     template_name = 'contact.html'
-    queryset = ProdukItem.objects.all()
-    paginate_by = 4
+    queryset = AlamatPengiriman.objects.all()
     
-    def get_queryset(self):
-        category_slug = self.request.GET.get('cat_slug')
-        search = self.request.GET.get('search')
-
-        if category_slug and category_slug != 'all':
-            queryset = ProdukItem.objects.filter(kategori=category_slug)
-        elif search:
-            queryset = ProdukItem.objects.filter(nama_produk__icontains=search)
-        else:
-            queryset = ProdukItem.objects.all()
-        return queryset
-
 class ProductDetailView(generic.DetailView):
     template_name = 'product_detail.html'
     queryset = ProdukItem.objects.all()
